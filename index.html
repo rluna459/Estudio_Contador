@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Morty Contador Público</title>
+</head>
+
+<body>
+    <!-- Encabezado / Navegación -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="nav">
+                <h3 class="nav__brand">Tu Contabilidad sin problemas</h3>
+                <button id="menu-toggle" class="nav__toggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav__menu">
+                    <li><a href="#contador" class="nav__link">Contador</a></li>
+                    <li><a href="#servicios" class="nav__link">Servicios Destacados</a></li>
+                    <li><a href="#contacto" class="nav__link nav__link--btn">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección Principal / Hero con Imagen de Perfil y Fondo -->
+        <section id="contador" class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__container">
+                <!-- Columna de Texto -->
+                <div class="hero__content">
+                    <span class="hero__badge">Estudio Contable &amp; Financiero</span>
+                    <h1 class="hero__title">Morty Contador Público</h1>
+                    <p class="hero__description">
+                        Con más de 10 años de trayectoria en el sector contable y financiero, Morty es Contador Público graduado de la UADE. Su enfoque se centra en brindar un asesoramiento integral, transparente y personalizado, ayudando a profesionales y empresas a optimizar sus impuestos, mantener sus cuentas al día y tomar decisiones financieras con total claridad y tranquilidad.
+                    </p>
+                    <a href="#contacto" class="hero__btn">Consulta Gratuita</a>
+                </div>
+
+                <!-- Columna de Imagen de Perfil -->
+                <div class="hero__image-wrapper">
+                    <img src="/imagenes/Morty.webp" alt="Morty Contador Público" class="hero__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios Destacados -->
+        <section id="servicios" class="services">
+            <div class="services__header">
+                <h2 class="services__title">Servicios Destacados</h2>
+                <p class="services__subtitle">Soluciones integrales diseñadas a la medida de tu negocio</p>
+            </div>
+
+            <div class="services__grid">
+                <!-- Servicio 1 -->
+                <article class="card">
+                    <div class="card__icon">📊</div>
+                    <h3 class="card__title">Contabilidad Fiscal</h3>
+                    <ul class="card__list">
+                        <li>Registro de Operaciones</li>
+                        <li>Determinación de impuestos</li>
+                        <li>Presentación de declaraciones</li>
+                        <li>Planeación y asesoría Fiscal</li>
+                        <li>Atención a requerimientos</li>
+                    </ul>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article class="card">
+                    <div class="card__icon">🔍</div>
+                    <h3 class="card__title">Auditoría</h3>
+                    <ul class="card__list">
+                        <li>Revisión de información</li>
+                        <li>Evaluación de controles</li>
+                        <li>Recopilación de evidencia</li>
+                        <li>Informe profesional independiente</li>
+                        <li>Recomendaciones estratégicas</li>
+                    </ul>
+                </article>
+
+                <!-- Servicio 3 -->
+                <article class="card">
+                    <div class="card__icon">👥</div>
+                    <h3 class="card__title">Gestión de Nóminas</h3>
+                    <ul class="card__list">
+                        <li>Cálculo de haberes</li>
+                        <li>Procesamiento de variables</li>
+                        <li>Emisión de recibos</li>
+                        <li>Gestión de impuestos y cargas sociales</li>
+                        <li>Administración de altas y bajas</li>
+                    </ul>
+                </article>
+
+                <!-- Servicio 4 -->
+                <article class="card">
+                    <div class="card__icon">📈</div>
+                    <h3 class="card__title">Estados Financieros</h3>
+                    <ul class="card__list">
+                        <li>Balance General</li>
+                        <li>Estado de Resultados</li>
+                        <li>Flujo de Efectivo</li>
+                        <li>Cambio en el patrimonio</li>
+                        <li>Notas y Memorias</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Formulario de Contacto (Envío a Email vía mailto:) -->
+        <section id="contacto" class="contact">
+            <div class="contact__container">
+                <form class="contact__form" action="mailto:mortycontador@gmail.com" method="GET" enctype="text/plain">
+                    <fieldset class="contact__fieldset">
+                        <legend class="contact__legend">Escribinos y aclara tus dudas</legend>
+                        
+                        <div class="contact__field">
+                            <label for="subject" class="contact__label">Nombre Completo</label>
+                            <input type="text" id="subject" name="subject" class="contact__input" placeholder="Ej. Juan Pérez" required>
+                        </div>
+
+                        <div class="contact__field">
+                            <label for="body" class="contact__label">Tu Consulta</label>
+                            <textarea id="body" name="body" class="contact__textarea" placeholder="Escribinos los detalles de tu consulta..." required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="contact__button">
+                        <span>Enviar Consulta por Email</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Morty Contador Público. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Botón Flotante Volver Arriba -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">⬆</button>
+    <script src="script.js"></script>
+</body>
+</html>
